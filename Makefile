@@ -7,7 +7,7 @@ install: all
 	mkdir -p $(DESTDIR)$(PREFIX)/bin
 	cp -f gohup $(DESTDIR)$(PREFIX)/bin
 	chmod 755 $(DESTDIR)$(PREFIX)/bin/gohup
-	mkdir -p $(DESTDIR)$(PREFIX)/man1
+	mkdir -p $(DESTDIR)$(MANPREFIX)/man1
 	sed "s/VERSION/$(VERSION)/g" < gohup.1 > $(DESTDIR)$(MANPREFIX)/man1/gohup.1
 	chmod 644 $(DESTDIR)$(MANPREFIX)/man1/gohup.1
 uninstall:
