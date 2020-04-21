@@ -18,7 +18,9 @@ gohup is suitable for the task.
 
 ## Installation
 In the root directory of project:
+
 	sudo make install
 
 To view the man page:
+
 	man gohup
