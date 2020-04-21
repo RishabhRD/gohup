@@ -5,5 +5,11 @@ copy:
 	cp gohup /usr/bin/gohup
 install: all copy
 clean:
-	rm *.o gohup
-	rm /usr/bin/gohup
+	if [ -f gohup ] ; \
+	then \
+	rm gohup ; \
+	fi;
+	if [ -f /usr/bin/gohup ] ; \
+	then \
+	rm /usr/bin/gohup ; \
+	fi;
