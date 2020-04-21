@@ -15,3 +15,10 @@ work on it if it's GUI application.
 Not fully. If you need the program's output executing upon this kind of program then nohup is your requirement for that task. However, if you just need a background 
 process or a GUI application without need of any log or output, and you want to continue with your terminal wokflow without any interruption
 gohup is suitable for the task.
+
+## Installation
+In the root directory of project:
+	sudo make install
+
+To view the man page:
+	man gohup
