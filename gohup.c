@@ -11,7 +11,7 @@ void execProgram(char** argv);
 void usage();
 void parseArguments(int argc,char** argv);
 
-#define VERSION 0.1
+#define VERSION 0.2
 
 #define EXIT_PROG 126
 #define EXIT_HUP 127
