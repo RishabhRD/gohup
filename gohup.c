@@ -66,8 +66,8 @@ void parseArguments(int argc,char** argv){
 		_exit(EXIT_HUP);
 	}
 	if(strcmp(argv[1],"--help")==0){
-		printf("Usage: nohup COMMAND [ARG]...\n");
-		printf("   or: nohup OPTION\n");
+		printf("Usage: gohup COMMAND [ARG]...\n");
+		printf("   or: gohup OPTION\n");
 		printf("Run COMMAND, ignoring hangup signals.\n\n");
 		printf("\t--help       display this help and exit\n");
 		printf("\t--version    output version information and exit\n\n");
@@ -83,7 +83,7 @@ void parseArguments(int argc,char** argv){
 	}
 	if(strlen(argv[1])>=2 && argv[1][0]=='-' && argv[1][1]=='-'){
 		printf("gohup: unrecognized option \'%s\'\n",argv[1]);
-		printf("Try \'nohup --help\' for more information.\n");
+		printf("Try \'gohup --help\' for more information.\n");
 		_exit(EXIT_HUP);
 	}
 }
